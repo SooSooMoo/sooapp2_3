@@ -1,4 +1,5 @@
 streamlit
+streamlit_autorefresh
 langchain_community
 langchain>=0.1.16
 openai>=1.0.0
