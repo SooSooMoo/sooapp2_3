@@ -18,6 +18,9 @@ if "last_user_input" not in st.session_state:
 if "selected_tz" not in st.session_state:
     st.session_state.selected_tz = "Asia/Tokyo"
 
+# 自動リフレッシュ：30秒ごと
+st_autorefresh(interval=30 * 1000, key="autorefresh")
+
 # 世界のタイムゾーン選択
 st.sidebar.subheader("🌍 タイムゾーンを選択")
 timezone_options = {
