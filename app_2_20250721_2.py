@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 import pytz
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage, AIMessage, SystemMessage
+from streamlit_autorefresh import st_autorefresh
 
 # セッション初期化
 if "messages" not in st.session_state:
